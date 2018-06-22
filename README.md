@@ -4,4 +4,4 @@
 # biom type file with metadata and otu table combined: pnadx_biom
 # otu table at the genus level with SampleID per row: ALIR_taxa_genus_summary_table_clean
 # metadata file: pnadx_meta
-# R code file for all statistical and ecological analyses in the manuscript. 
+# R code file for all statistical and ecological analyses in the manuscript: Rcode_PNADx_github.Rmd
