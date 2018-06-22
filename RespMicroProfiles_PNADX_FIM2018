@@ -537,72 +537,34 @@ ggplot(pnadx_4biomarkergraphs_long, aes(x = eachpathogenabund50, y = value, fill
 # examine independence of biomarker association to culture positivity
 # entire cohort
 # il6
-
 fit <- lm(il6_rd ~ eachpathogenabund50,   data=pnadx_biom_lung)
 summary(fit)
-
-(Intercept)            4.1465     0.2069  20.044   <2e-16 ***
-eachpathogenabund501   1.0170     0.3687   2.759    0.008 ** 
-
-  fit <- lm(il6_rd ~ eachpathogenabund50 + balposbasl,   data=pnadx_biom_lung)
+fit <- lm(il6_rd ~ eachpathogenabund50 + balposbasl,   data=pnadx_biom_lung)
 summary(fit)
-(Intercept)           4.14464    0.21075  19.667   <2e-16 ***
-eachpathogenabund501  0.99894    0.46393   2.153   0.0361 *  
-balposbasl1           0.03388    0.51828   0.065   0.9481   
 
 # rage
 fit <- lm(rage_rd~ eachpathogenabund50,   data=pnadx_biom_lung)
 summary(fit)
-    Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            7.9561     0.1432  55.555   <2e-16 ***
-eachpathogenabund501   0.6440     0.2552   2.523   0.0147 * 
-      
 fit <- lm(rage_rd~ eachpathogenabund50 + balposbasl,   data=pnadx_biom_lung)
 summary(fit)
-                     Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            7.9482     0.1457  54.564   <2e-16 ***
-eachpathogenabund501   0.5664     0.3207   1.766   0.0833 .  
-balposbasl1            0.1453     0.3582   0.406   0.6868  
-
 
 # tnfr1
 fit <- lm(tnfr1_rd~ eachpathogenabund50,   data=pnadx_biom_lung)
 summary(fit)
-                    Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            9.5417     0.1281  74.504   <2e-16 ***
-eachpathogenabund501   0.5140     0.2283   2.252   0.0286 * 
 fit <- lm(tnfr1_rd~ eachpathogenabund50 + balposbasl,   data=pnadx_biom_lung)
 summary(fit)
-                Estimate Std. Error t value Pr(>|t|)    
-(Intercept)           9.53790    0.13042  73.134   <2e-16 ***
-eachpathogenabund501  0.47675    0.28710   1.661    0.103    
-balposbasl1           0.06977    0.32073   0.218    0.829 
 
 # il8
 fit <- lm(il8_rd~ eachpathogenabund50,   data=pnadx_biom_lung)
-summary(fit)
-              Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            2.6353     0.1689  15.604   <2e-16 ***
-eachpathogenabund501   0.3002     0.3010   0.997    0.323    
-              
+summary(fit)  
 fit <- lm(il8_rd~ eachpathogenabund50 + balposbasl,   data=pnadx_biom_lung)
 summary(fit)
-                 Estimate Std. Error t value Pr(>|t|)    
-(Intercept)           2.63771    0.17204  15.332   <2e-16 ***
-eachpathogenabund501  0.32437    0.37873   0.856    0.396    
-balposbasl1          -0.04531    0.42309  -0.107    0.915 
 
 
 # procalcitonin
 fit <- lm(procalcitonin_rd~ eachpathogenabund50,   data=pnadx_biom_lung)
 summary(fit)
-    Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            6.3777     0.3830  16.650   <2e-16 ***
-eachpathogenabund501   0.5620     0.6827   0.823    0.414    
 fit <- lm(procalcitonin_rd~ eachpathogenabund50 + balposbasl,   data=pnadx_biom_lung)
 summary(fit)
-                     Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            6.3976     0.3897  16.418   <2e-16 ***
-eachpathogenabund501   0.7588     0.8578   0.885    0.381    
-balposbasl1           -0.3683     0.9583  -0.384    0.702    
+
 
