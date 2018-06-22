@@ -552,10 +552,10 @@ balposbasl1           0.03388    0.51828   0.065   0.9481
 
 # rage
 fit <- lm(rage_rd~ eachpathogenabund50,   data=pnadx_biom_lung)
-summary(fit)
-    Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            7.9561     0.1432  55.555   <2e-16 ***
-eachpathogenabund501   0.6440     0.2552   2.523   0.0147 * 
+# summary(fit)
+  #   Estimate Std. Error t value Pr(>|t|)    
+# (Intercept)            7.9561     0.1432  55.555   <2e-16 ***
+# eachpathogenabund501   0.6440     0.2552   2.523   0.0147 * 
       
 fit <- lm(rage_rd~ eachpathogenabund50 + balposbasl,   data=pnadx_biom_lung)
 summary(fit)
