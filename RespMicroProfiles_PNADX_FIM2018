@@ -113,7 +113,7 @@ pnadx_biom$granulicattella <- pnadx_biom$`Bacteria;Firmicutes;Bacilli;Lactobacil
 pnadx_biom$rothia <- pnadx_biom$`Bacteria;Actinobacteria;Actinobacteria;Micrococcales;Micrococcaceae;Rothia`
 # Neisseria
 pnadx_biom$neisseria <- pnadx_biom$`Bacteria;Proteobacteria;Betaproteobacteria;Neisseriales;Neisseriaceae;Neisseria`
-# Streptococcus - this may have to be revised if we find by qPCR that the strep sequences are from Strep pneumonia strain. 
+# Streptococcus 
 pnadx_biom$streptococcus <- pnadx_biom$`Bacteria;Firmicutes;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus`
 
 # create variable contoralabund
